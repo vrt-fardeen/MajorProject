@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const { getMaxAge } = require("next/dist/server/image-optimizer");
+// const { getMaxAge } = require("next/dist/server/image-optimizer");
 const Schema = mongoose.Schema;
 
 const reviewSchema = new Schema({
