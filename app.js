@@ -66,9 +66,9 @@ const sessionOptions = {
         httpOnly: true, // Helps prevent XSS attacks
     }
 };
-// app.get("/", ( req, res) => {
-//     res.send("root is working");
-// });
+app.get("/", ( req, res) => {
+    res.render("index.ejs");
+});
 
 
 
