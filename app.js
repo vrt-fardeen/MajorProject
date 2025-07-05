@@ -66,9 +66,10 @@ const sessionOptions = {
         httpOnly: true, // Helps prevent XSS attacks
     }
 };
-app.get("/", ( req, res) => {
-    res.render("index.ejs");
-});
+
+// app.get("/", ( req, res) => {
+//     res.render("show.ejs", {title: "Welcome to Wonderlust"});
+// });
 
 
 
