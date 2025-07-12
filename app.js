@@ -67,9 +67,9 @@ const sessionOptions = {
     }
 };
 
-// app.get("/", ( req, res) => {
-//     res.render("show.ejs", {title: "Welcome to Wonderlust"});
-// });
+app.get("/", ( req, res) => {
+    res.render("../show.ejs", {title: "Welcome to Wonderlust"});
+});
 
 
 

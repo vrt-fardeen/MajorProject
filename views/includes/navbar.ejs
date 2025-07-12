@@ -24,7 +24,7 @@
   }
 </style>
 
-
+<% const currentUser = typeof locals.currentUser !== 'undefined' ? locals.currentUser : null; %>
 
 <nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
     <div class="container-fluid">
@@ -46,14 +46,12 @@
         
         <div class="navbar-nav ms-auto">
           <a class="nav-link" href="/listings/new">Add New Listing</a>
-          <% if(!currentUser) { %>
-          <a class="nav-link " aria-current="page" href="/signup"><b>Sign Up</b></a>
-
-          <a class="nav-link" href="/login"><b>Login</b></a>
-          <%}%>
-          <% if(currentUser) { %>
-          <a class="nav-link" href="/logout"><b>Logout</b></a>
-          <%}%>
+          <% if (!currentUser) { %>
+            <a class="nav-link" href="/signup"><b>Sign Up</b></a>
+            <a class="nav-link" href="/login"><b>Login</b></a>
+          <% } else { %>
+            <a class="nav-link" href="/logout"><b>Logout</b></a>
+          <% } %>
         </div>
       </div>
     </div>
